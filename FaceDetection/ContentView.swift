@@ -12,30 +12,14 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 
+                Image("App_Clips_icon")
+                    .resizable()
+                    .scaledToFit()
+                
                 NavigationLink(destination: FaceMaskView()) {
                     Text("Face Mask").padding()
                 }.buttonStyle(.bordered)
-                
-                
-                Button {
-                    
-                } label: {
-                    Text("Face Detection").padding()
-                }.buttonStyle(.bordered)
-                
-                
-                Button {
-                    
-                } label: {
-                    Text("Face Classification").padding()
-                }.buttonStyle(.bordered)
-                
-                
-                Button {
-                    
-                } label: {
-                    Text("Object Detection").padding()
-                }.buttonStyle(.bordered)
+        
                 
             }
             .padding()
