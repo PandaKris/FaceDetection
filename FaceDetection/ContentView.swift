@@ -9,13 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                
+                NavigationLink(destination: FaceMaskView()) {
+                    Text("Face Mask").padding()
+                }.buttonStyle(.bordered)
+                
+                
+                Button {
+                    
+                } label: {
+                    Text("Face Detection").padding()
+                }.buttonStyle(.bordered)
+                
+                
+                Button {
+                    
+                } label: {
+                    Text("Face Classification").padding()
+                }.buttonStyle(.bordered)
+                
+                
+                Button {
+                    
+                } label: {
+                    Text("Object Detection").padding()
+                }.buttonStyle(.bordered)
+                
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
